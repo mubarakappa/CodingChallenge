@@ -43,7 +43,7 @@ With numbers as these, cached for each (𝑛,𝑘), the space requirements grow 
 Of course, there are optimization mechanisms to handle both stack-size, heap-size and gc performance, but this is just an interesting small-tweaking-to-run thought-optimization experiment based on my brother's own-implementation of this algorithm for a coding challenge.
 
 
-### Hot to Run
+### How to Run
 Requires:
 - Java 8
 - Maven (for Java 8)
