@@ -2,8 +2,6 @@
 
 Implementation based on the series "Number of partitions of n into at least two distinct parts." http://oeis.org/A111133
 
-Based on the solution from my brother's coding challenge he did, this repo is an optimization in Java for larger number computations due to the original codes rather large space complexity.
-
 ### Mathematical definition
 
 The sum of partitions for 𝑛 equals to ∑(𝑘=2, sqrt(2𝑛))=𝑓(𝑛,𝑘). The upper bound of sqrt(2𝑛) is due to the fact that any set of 𝑘 numbers will have sum at least 𝑘(𝑘+1)/2; therefore, there is no need to consider sets of size sqrt(2n) or larger.
@@ -39,9 +37,6 @@ Examples above - space consumption for n=100k, which produces the following numb
 `42494159403332317292526619504218136903700576932083624292980870857936616016516019121515022089648672327193383380680571759727227416036821183744674051457194041711141429085626371124196057902283995836976239181670821800000403741232325992196887134172549`
 
 With numbers as these, cached for each (𝑛,𝑘), the space requirements grow exponentially. There should exist a (𝑛,𝑘)-eviction formula for subsequent 𝑘  iterations, due to the nature the series converges to 0.
-
-Of course, there are optimization mechanisms to handle both stack-size, heap-size and gc performance, but this is just an interesting small-tweaking-to-run thought-optimization experiment based on my brother's own-implementation of this algorithm for a coding challenge.
-
 
 ### How to Run
 Requires:
