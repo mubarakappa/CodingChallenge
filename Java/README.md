@@ -16,7 +16,7 @@ Requires:
 - Maven (for Java 8)
 Jenv(with mvn plugin) is recommended for both maven and java.
 
-Build `jar` with `mvn clean install`. 
+Build `jar` with `mvn clean install` in source dir. 
 
 Run from the source dir with `java -Xss${StackSize} -Xmx${HeapSize} -XX:+UseG1GC -jar target/untitled1-1.0-SNAPSHOT-jar-with-dependencies.jar n`.
 
