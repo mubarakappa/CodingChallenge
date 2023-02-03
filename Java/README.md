@@ -8,14 +8,7 @@ Effectively, this algorithm constructs a binary tree of (𝑛,𝑘) values for e
 
 ## Memoization
 
-As stated above, memoization is the integral part of this implementation, with processing being in 𝑂(3/2𝑛) time. With each subsequent iteration of 𝑘, a cache matrix is updated with the 𝑘=i; => 𝑓(𝑛,𝑘) combinations. The computed numbers as recursion is computed, grow exponentially
-
-For only n>150, the numbers grow exponential, making them not fit the 'long' primitive even as soon as for ~ n=800, introducing the need for dynamic integers such as BigInteger and Huldra's BigInt (https://github.com/bwakell/Huldra), which is used here with minimal changes for more optimised additions and space consumptions.
-
-Examples above - space consumption for n=100k, which produces the following number:
-`42494159403332317292526619504218136903700576932083624292980870857936616016516019121515022089648672327193383380680571759727227416036821183744674051457194041711141429085626371124196057902283995836976239181670821800000403741232325992196887134172549`
-
-With numbers as these, cached for each (𝑛,𝑘), the space requirements grow exponentially. There should exist a (𝑛,𝑘)-eviction formula for subsequent 𝑘  iterations, due to the nature the series converges to 0.
+As stated above, memoization is the integral part of this implementation, with processing being in 𝑂(3/2𝑛) time. With each subsequent iteration of 𝑘, a cache matrix is updated with the 𝑘=i; => 𝑓(𝑛,𝑘) combinations. The computed numbers as recursion is computed, grow exponentially.
 
 ## How to Run
 Requires:
